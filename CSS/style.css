@@ -148,7 +148,8 @@ nav{
 
 #about-page{
     width: 100%;
-    height: 800px;
+    min-height: 800px;
+    height: fit-content;
     /* border: solid white; */
     display: flex;
     justify-content: center;
@@ -213,7 +214,8 @@ nav{
 
 #project-page,#contact-page{
     width: 100%;
-    height: 800px;
+    min-height: 800px;
+    height: fit-content;
     border: 1px solid rgba(2, 2, 17, 0.059);
 }
 .header{
@@ -309,9 +311,9 @@ nav{
     /* border: solid red; */
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     padding: 30px;
-    min-height: 700px
+    min-height: 700px;
 }
 
 .input-box{
@@ -372,6 +374,7 @@ footer a {
 }
 footer a i{
     font-size: 30px;
+    color: aqua;
 }
 
 
@@ -461,19 +464,27 @@ footer a i{
 
     #home-page,#project-page{
         flex-direction: column;
-        margin-bottom: 10rem;
+        /* margin-bottom: 4rem; */
+        /* border: solid red; */
     }
     #home-page-about,#home-page-photo,#about-me,#about-page-photo{
         margin: 3rem auto;
-        margin-top: 4rem;
+        margin-top: 2rem;
         width: 90%;
         /* border: solid whitesmoke; */
+    }
+    #about-me-header{
+        margin-top: 10px;
     }
 
     #about-page{
         flex-direction: column-reverse;
-        margin-bottom: 10rem;
+        /* margin-bottom: 7rem; */
         /* border: solid red; */
+    }
+
+    #project-page h2{
+        margin-bottom: 3rem;
     }
 
     #project-details{
@@ -511,12 +522,15 @@ footer a i{
         resize: none;
         width: 95%;
     }
-    #contact-page{
-        /* border: solid red; */
-        margin-bottom: 5rem;
-    }
+    
     .header{
         font-size: 25px;
+    }
+    footer .copyright{
+        font-size: 12px;
+    }
+    footer a{
+        font-size: 13px;
     }
 }
 
