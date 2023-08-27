@@ -1,0 +1,32 @@
+.flex-r{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center-h{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-v{
+    display: flex;
+    align-items: center;
+}
+
+.flex-center-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
