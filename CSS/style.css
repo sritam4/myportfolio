@@ -26,10 +26,11 @@ nav{
 .left{
     width: 30%;
     /* border: solid; */
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
-    margin-top: 30px;
-    margin-left: 20px;
+    font-weight:500;
+    /* margin-top: 31px; */
+    margin-left: 80px;
 }
 
 #menu-icon{
@@ -65,7 +66,7 @@ nav{
 #home-page-about{
     width: 45%;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 250px;
     height: 400px;
     color: white;
     /* border: solid green; */
@@ -159,7 +160,7 @@ nav{
 #about-page-photo{
     width: 30%;
     height: fit-content;
-    min-width: 350px;
+    min-width: 300px;
     max-width: 400px;
     display: flex;
     align-items: center;
@@ -178,7 +179,7 @@ nav{
 
 #about-me{
     width: 40%;
-    min-width: 300px;
+    min-width: 250px;
     /* height: 500px; */
     /* border: solid white; */
     padding-left: 20px;
@@ -382,8 +383,12 @@ footer a i{
     nav{
         padding: 1.5rem 3%;
     }
+    .left{
+        margin-top: 0px;
+        margin-left: 3%;
+    }
     section{
-        padding: 3rem 1rem;
+        padding: 3rem 1.5rem;
         justify-content: space-between;
     }
 
@@ -504,6 +509,16 @@ footer a i{
 }
 
 @media (max-width:560px) {
+    #home-page-about,#home-page-photo,#about-me,#about-page-photo{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    section{
+        padding: 3rem 0;
+    }
+
     #project-details{
         display:grid;
         grid-template-columns:1fr;
@@ -517,6 +532,9 @@ footer a i{
 
     .input-box input{
         width: 100%;
+    }
+    #contact-box{
+        padding: 30px 10px;
     }
     #contact-box textarea{
         resize: none;
