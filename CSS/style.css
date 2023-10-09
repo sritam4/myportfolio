@@ -233,6 +233,8 @@ nav{
     font-weight: bold;
 }
 
+/*------------------------------------------- Projects section */
+
 #project-details{
     min-height: 650px;
     height: 750px;
@@ -307,6 +309,13 @@ nav{
     color: rgb(2, 2, 47);
 }
 
+.project-box-layer p{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ----------------------------------Contact Section */
 #contact-box{
     max-width: 70rem;
     /* border: solid red; */
@@ -347,7 +356,13 @@ nav{
     margin-top: 2rem;
     cursor: pointer;
 }
+/* to erease the inc dec icon from input field of phone number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
 
+/* ------------------------------------footer section */
 footer{
     display: flex;
     justify-content: space-around;

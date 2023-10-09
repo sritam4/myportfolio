@@ -17,11 +17,16 @@ window.onscroll=()=>{
         let offset =sec.offsetTop - 150;
         let height=sec.offsetHeight;
         let id=sec.getAttribute('id');
+        // console.log(id);
 
         if(top>=offset && top<offset+height){
-            navLinks.forEach(links=>{
-                links.classList.remove('active');
-                document.querySelector('.page-links[href*=' + id +']').classList.add('active');
+            navLinks.forEach((links)=>{
+                // links.classList.remove('active-link');
+                links.style.color="white";
+        
+                // document.querySelector('.page-links[href*=' + id +']').classList.add('active-link');
+                document.querySelector('.page-links[href*=' + id +']').style.color="aqua"
+                console.log(document.querySelector('.page-links[href*=' + id +']'));
             })
         }
     });
