@@ -122,6 +122,10 @@ nav{
     box-shadow: 0 0 8px aqua;
     transition: 0.5s ease;
     user-select: none;
+    >a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 #home-page-photo{
